@@ -29,7 +29,8 @@ pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 - Then from PowerShell or the MSYS2 MinGW shell compile:
 
 ```powershell
-cd 'C:\Users\manas\Downloads\cpp-snake-game'
+# from the project folder (adjust path to where you cloned/imported the repo)
+cd 'C:\path\to\cpp-snake-game'
 g++ .\main.cpp -O2 -std=c++17 -o .\snake.exe
 .\snake.exe
 ```
@@ -45,7 +46,8 @@ g++ .\main.cpp -O2 -std=c++17 -o .\snake.exe
 - Open the "x64 Native Tools Command Prompt" (so `cl.exe` is on PATH) and run:
 
 ```cmd
-cl /EHsc "C:\Users\manas\Downloads\cpp-snake-game\main.cpp" /Fe:"C:\Users\manas\Downloads\cpp-snake-game\snake.exe"
+REM from the project folder (adjust path to where you cloned/imported the repo)
+cl /EHsc "C:\path\to\cpp-snake-game\main.cpp" /Fe:"C:\path\to\cpp-snake-game\snake.exe"
 ```
 
 Controls
